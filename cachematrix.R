@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This code creates a framework for creating delegate matrix that will cache the results of the solve operation (i.e the inverse)
 
-## Write a short comment describing this function
+## Creates a cache matrix from another matrix, and sets up delegates to the solve operation
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -18,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## caches and/or recalculates the inverse via the solve operation
 
 cacheSolve <- function(x, ...) {
   m <- x$getsolve()
